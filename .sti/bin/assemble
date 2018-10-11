@@ -1,0 +1,6 @@
+#! /bin/bash -e
+echo "---> Installing application source..."
+cp -Rf ./etc/ /opt/app-root/etc/
+cp -Rf /tmp/src/. ./
+chown -R 1001:1001 /opt/app-root
+chmod +x /opt/app-root
